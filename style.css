@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    background-color: #121227;
+    color: white;
+    font-family: Arial, sans-serif;
+
+}
+
+header {
+    padding: 15px 35px;
+    background-color: #151527;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* header hasta aqui */
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.hero {
+    min-height: 260px;
+    /*background-color: #1f2933;*/
+    background-image: url("assets/hero.jpg");
+    background-size: cover;
+    background-position: center;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    background-color: #1d18ff;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-weight: bold;
+}
+
+
+.featured {
+    margin-top: 30px;
+}
+
+.featured h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+
+.cards-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+
+/*tarjetas*/
+
+
+
+
+
+.game-card {
+    width: 220px;
+}
+
+.game-card img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.game-card h3 {
+    font-size: 14px;
+    margin: 0 0 5px;
+}
+
+.game-card p {
+    font-size: 12px;
+    margin: 0;
+    color: #b8b8c8;
+}
+
+
+
+.categories {
+    margin-top: 40px;
+}
+
+.categories h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.category-card {
+    width: 150px;
+}
+
+.category-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.category-card h3 {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+footer {
+    margin-top: 60px;
+    padding: 30px;
+    text-align: center;
+    color: #9a9ab5;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.social-links img {
+    width: 22px;
+    height: 22px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .cards-row {
+        justify-content: center;
+    }
+
+    .game-card,
+    .category-card {
+        width: 100%;
+        max-width: 260px;
+    }
+}
+
+
